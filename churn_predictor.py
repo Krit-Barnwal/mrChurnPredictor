@@ -50,7 +50,7 @@ with open(r'Models_Scalers\scalar.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 # Load Model
-model = load_model('Models_Scalers\model.h5')
+model = load_model(r'Models_Scalers\model.h5')
 
 # Process inputs and make predictions
 if st.button('Submit'):

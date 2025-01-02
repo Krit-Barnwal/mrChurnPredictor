@@ -40,13 +40,13 @@ NumofProducts = st.number_input("Number of Products", min_value=1, max_value=10,
 HasCrCard = st.selectbox("Do you have a credit card?", ['Yes', 'No'])
 
 # Load Encoders and Scaler
-with open('Models_Scalers\gender_encoder.pkl', 'rb') as file:
+with open(r'Models_Scalers\gender_encoder.pkl', 'rb') as file:
     gender_encoder = pickle.load(file)
     
-with open('Models_Scalers\geo_Encoder.pkl', 'rb') as file:
+with open(r'Models_Scalers\geo_Encoder.pkl', 'rb') as file:
     geo_encoder = pickle.load(file)
     
-with open('Models_Scalers\scalar.pkl', 'rb') as file:
+with open(r'Models_Scalers\scalar.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 # Load Model
